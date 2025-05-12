@@ -77,8 +77,8 @@ Then try building.
     <tstamp/>
     <property name="Name" value="Jasmin"/>
     <property name="name" value="jasmin"/>
-    <property name="version" value="2.1"/>
-    <property name="year" value="2006"/>
+    <property name="version" value="2.5"/>
+    <property name="year" value="2025"/>
 
     <echo message="----------- ${Name} ${version} [${year}] ------------"/>
 
@@ -99,8 +99,8 @@ Then try building.
     <property name="build.lib" value="${build.dir}/lib"/>
     <property name="build.jasmin.src" value="${build.dir}/jasmin/src"/>
     <property name="build.jasmin.dest" value="${build.dir}/jasmin/classes"/>
-    <property name="apidocs.dir" value="${docs.dir}/api"/>	   	
-    
+    <property name="apidocs.dir" value="${docs.dir}/api"/>
+
     <!-- Define the distribution directories -->
     <property name="dist.root" value="${root.dir}/dist"/>
     <property name="sourcedist.dir" value="${dist.root}/${name}-${version}/${name}-${version}"/>
@@ -161,7 +161,7 @@ Then try building.
   <!-- =================================================================== -->
   <target name="compile-jasmin" depends="prepare-jasmin">
     <javac srcdir="${build.jasmin.src}"
-           source="1.4"
+           source="8"
            destdir="${build.jasmin.dest}"
            debug="${debug}"
            deprecation="${deprecation}"
@@ -186,7 +186,7 @@ Then try building.
   <target name="compile-java_cup" depends="prepare-jasmin">
     <mkdir dir="${build.jasmin.dest}/java_cup"/>
     <javac srcdir="${build.jasmin.src}/java_cup"
-           source="1.4"
+           source="8"
            destdir="${build.jasmin.dest}/java_cup"
            debug="${debug}"
            deprecation="${deprecation}"
@@ -230,14 +230,14 @@ Then try building.
              sourcepath="${src.dir}"
              destdir="${apidocs.dir}"
              author="true"
-             additionalparam="-source 1.4"
+             additionalparam="-source 8"
              version="true"
              use="true"
              splitindex="true"
              noindex="false"
              windowtitle="${Name} API"
              doctitle="${Name}"
-             bottom="Copyright &#169; ${year} Jonathan Meyer, USA All rights reserved."             
+             bottom="Copyright &#169; ${year} Jonathan Meyer, USA All rights reserved."
     />
   </target>
 
