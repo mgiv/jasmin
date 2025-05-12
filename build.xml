@@ -54,18 +54,6 @@ This jar file can be run by the command
   java -jar jasmin.jar <filenames>
 
 from within the ./build directory. 
-
-* On Win/98 you may get an "Out of Environment Space" error message. This happens if
-Windows provides too small a space for environment variables. To work around this
-limitation: 
-  Close the DOS window (the error can corrupt its CLASSPATH variable). 
-  Open a new DOS window. Click on the MS-DOS icon at the top left of the window. 
-  Select the Properties option. 
-  Click on the Memory tab. 
-  Adjust the "Initial Environment" drop-down box from "Auto" to "2816". 
-  Click OK. 
-Then try building.
-
 -->
 
 <project name="Jasmin" default="usage" basedir=".">
