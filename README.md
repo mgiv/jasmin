@@ -1,3 +1,7 @@
+# About this fork
+
+This fork was created because jasmin runs on java 1.4. This causes builds to fail as it is too old. However it is very easy to port to 21 and get a working build
+
 # Introduction
 
 This document tries to answer some questions you might have about Jasmin. In particular, several people have asked me what Jasmin is, why they might use Jasmin, and why I wrote it in the first place. I've tried to give some answers to these questions below.
