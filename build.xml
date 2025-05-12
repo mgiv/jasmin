@@ -149,7 +149,7 @@ from within the ./build directory.
   <!-- =================================================================== -->
   <target name="compile-jasmin" depends="prepare-jasmin">
     <javac srcdir="${build.jasmin.src}"
-           source="21"
+           release="21"
            destdir="${build.jasmin.dest}"
            debug="${debug}"
            deprecation="${deprecation}"
@@ -174,7 +174,7 @@ from within the ./build directory.
   <target name="compile-java_cup" depends="prepare-jasmin">
     <mkdir dir="${build.jasmin.dest}/java_cup"/>
     <javac srcdir="${build.jasmin.src}/java_cup"
-           source="21"
+           release="21"
            destdir="${build.jasmin.dest}/java_cup"
            debug="${debug}"
            deprecation="${deprecation}"
