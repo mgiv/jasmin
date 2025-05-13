@@ -1,6 +1,6 @@
 # About this fork
 
-This fork was created because jasmin runs on Java 1.4. This causes builds to fail as it is too old. However it is very easy to port to 21 and get a working build.
+The original jasmin repo is on java 1.4, which is unusable on most systems. This is updated to java 21
 > [!IMPORTANT]
 > The bytecode itself is still from the Java 1.4 era. The only thing I updated was the assembler itself.
 # Introduction
